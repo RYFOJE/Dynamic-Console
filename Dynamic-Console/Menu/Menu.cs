@@ -4,11 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Dynamic_Console.Menu
+namespace Dynamic_Console
 {
     public class Menu
     {
-        private Menu? _instance;
+        private static Menu? _instance;
         public static int width = 75;
 
         /// <summary>
@@ -22,7 +22,7 @@ namespace Dynamic_Console.Menu
         /// Singleton implementation to always get the same Menu
         /// </summary>
         /// <returns></returns>
-        public Menu GetInstance()
+        public static Menu GetInstance()
         {
             if (_instance == null)
                 _instance = new Menu();
@@ -66,7 +66,10 @@ namespace Dynamic_Console.Menu
     {
         public static void PrintChar(int count, char character)
         {
-            Console.Write(character);
+            for (int i = 0; i < count; i++)
+            {
+                Console.Write(character);
+            }
         }
 
         public static readonly Dictionary<String, char> borderCharacters = new Dictionary<string, char>
