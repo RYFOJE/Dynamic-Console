@@ -15,6 +15,11 @@ namespace Dynamic_Console
 
         public Section() { }
 
+        public void AddLine(Line newLine)
+        {
+            _lines.Add(newLine);
+        }
+
         public void EnableDivider() 
         {
             _isBottomDivider = true;
