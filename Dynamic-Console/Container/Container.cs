@@ -7,9 +7,6 @@ using System.Threading.Tasks;
 
 namespace Dynamic_Console
 {
-    /// <summary>
-    /// Parent class that acts as empty 
-    /// </summary>
     public class Container
     {
 
@@ -25,7 +22,7 @@ namespace Dynamic_Console
             return _width;
         }
 
-        public virtual void Display() 
+        public virtual void Display()
         {
             Helper.PrintChar(_width, ' ');
         }

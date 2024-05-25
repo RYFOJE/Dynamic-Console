@@ -13,6 +13,13 @@
             page1.GetSection(0).AddLine(new Line());
             page1.GetSection(0).AddLine(new Line(new LeftPaddedContainer(new Text("Hello"))));
             page1.GetSection(0).AddLine(new Line(new RightPaddedContainer(new Text("Hello"))));
+            page1.GetSection(0).AddLine(new Line(new CenteredPaddedContainer(new Text("Hello"))));
+
+            UniformArrayContainer container = new UniformArrayContainer();
+            container.AddContainer(new CenteredPaddedContainer(new Text("Hello World")));
+            container.AddContainer(new CenteredPaddedContainer(new Text("Hello World")));
+
+            page1.GetSection(0).AddLine(new Line(container));
 
             menu.DisplayPage("page1");
 

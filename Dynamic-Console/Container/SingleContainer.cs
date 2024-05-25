@@ -21,5 +21,7 @@ namespace Dynamic_Console
             _content = newContent;
         }
 
+        public abstract override void Display();
+
     }
 }
