@@ -11,6 +11,8 @@
             page1.GetSection(0).EnableDivider();
             page1.GetSection(0).AddLine(new Line());
             page1.GetSection(0).AddLine(new Line());
+            page1.GetSection(0).AddLine(new Line(new LeftPaddedContainer(new Text("Hello"))));
+            page1.GetSection(0).AddLine(new Line(new RightPaddedContainer(new Text("Hello"))));
 
             menu.DisplayPage("page1");
 

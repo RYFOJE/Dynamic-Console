@@ -6,10 +6,15 @@ using System.Threading.Tasks;
 
 namespace Dynamic_Console
 {
-    abstract class SingleContainer(int width) : Container(width)
+    public abstract class SingleContainer : Container
     {
 
-        Content _content = new Content();
+        protected Content _content = new Content();
+
+        public SingleContainer(Content content)
+        {
+            SetContent(content);
+        }
 
         public void SetContent(Content newContent)
         {

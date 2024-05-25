@@ -14,7 +14,18 @@ namespace Dynamic_Console
 
         public Line() 
         {
-            _container = new Container(Menu.GetWidth());
+            SetContainer(new Container());
+        }
+
+        public Line(Container container)
+        {
+            SetContainer(container);
+        }
+
+        public void SetContainer(Container newContainer)
+        {
+            _container = newContainer;
+            newContainer.SetWidth(Menu.GetWidth());
         }
 
         public void Display()
