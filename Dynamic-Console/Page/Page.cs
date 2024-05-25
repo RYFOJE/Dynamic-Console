@@ -8,6 +8,8 @@ namespace Dynamic_Console.Menu
 {
     public class Page
     {
+        
+        Dictionary<string>
 
         public Page()
         {
