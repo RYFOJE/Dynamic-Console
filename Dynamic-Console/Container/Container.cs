@@ -30,7 +30,6 @@ namespace Dynamic_Console
             return _width;
         }
 
-
         public void Display() 
         {
             Helper.PrintChar(_width, ' ');
