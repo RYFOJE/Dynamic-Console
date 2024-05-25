@@ -1,26 +1,26 @@
 ﻿namespace Dynamic_Console
 {
-    public class Text : Content
+    internal class Text : Content
     {
 
         private String _text = "";
 
-        public Text(string text)
+        internal Text(string text)
         {
             _text = text;
         }
 
-        public void SetText(string text)
+        internal void SetText(string text)
         {
             _text = text;
         }
 
-        public override void Display()
+        internal override void Display()
         {
             Console.Write(_text);
         }
 
-        public override int GetWidth()
+        internal override int GetWidth()
         {
             return _text.Length;
         }

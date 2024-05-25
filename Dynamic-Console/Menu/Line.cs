@@ -7,28 +7,28 @@ using System.Threading.Tasks;
 
 namespace Dynamic_Console
 {
-    public class Line
+    internal class Line
     {
 
         private Container _container;
 
-        public Line() 
+        internal Line() 
         {
             SetContainer(new Container());
         }
 
-        public Line(Container container)
+        internal Line(Container container)
         {
             SetContainer(container);
         }
 
-        public void SetContainer(Container newContainer)
+        internal void SetContainer(Container newContainer)
         {
             _container = newContainer;
             newContainer.SetWidth(Menu.GetWidth());
         }
 
-        public void Display()
+        internal void Display()
         {
             Console.Write(Helper.borderCharacters["VERTICAL"]);
             _container.Display();

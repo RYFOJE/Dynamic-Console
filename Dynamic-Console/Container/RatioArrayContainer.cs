@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Dynamic_Console
 {
-    public class RatioArrayContainer : Container
+    internal class RatioArrayContainer : Container
     {
     }
 }

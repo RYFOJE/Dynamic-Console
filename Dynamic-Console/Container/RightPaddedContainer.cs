@@ -6,12 +6,12 @@ using System.Threading.Tasks;
 
 namespace Dynamic_Console
 {
-    public class RightPaddedContainer : SingleContainer
+    internal class RightPaddedContainer : SingleContainer
     {
 
-        public RightPaddedContainer(Content content) : base(content) { }
+        internal RightPaddedContainer(Content content) : base(content) { }
 
-        public override void Display()
+        internal override void Display()
         {
             int calculatedPadding = _width - _content.GetWidth();
             Helper.PrintChar(calculatedPadding, ' ');

@@ -7,22 +7,22 @@ using System.Threading.Tasks;
 
 namespace Dynamic_Console
 {
-    public class Container
+    internal class Container
     {
 
         protected int _width = 0;
 
-        public void SetWidth(int width)
+        internal void SetWidth(int width)
         {
             _width = width;
         }
 
-        public int GetWidth()
+        internal int GetWidth()
         {
             return _width;
         }
 
-        public virtual void Display()
+        internal virtual void Display()
         {
             Helper.PrintChar(_width, ' ');
         }

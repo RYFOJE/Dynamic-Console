@@ -7,25 +7,25 @@ using System.Threading.Tasks;
 
 namespace Dynamic_Console
 {
-    public class Section
+    internal class Section
     {
 
         private bool _isBottomDivider = false;
         private List<Line> _lines = [];
 
-        public Section() { }
+        internal Section() { }
 
-        public void AddLine(Line newLine)
+        internal void AddLine(Line newLine)
         {
             _lines.Add(newLine);
         }
 
-        public void EnableDivider() 
+        internal void EnableDivider() 
         {
             _isBottomDivider = true;
         }
 
-        public void DisableDivider()
+        internal void DisableDivider()
         {
             _isBottomDivider = false;
         }
@@ -33,7 +33,7 @@ namespace Dynamic_Console
         /// <summary>
         /// Displays the whole section
         /// </summary>
-        public void Display() 
+        internal void Display() 
         { 
             
             foreach (var line in _lines)

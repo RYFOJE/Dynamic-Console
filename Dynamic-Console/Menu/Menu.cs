@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Dynamic_Console
 {
-    public class Menu
+    internal class Menu
     {
         private static Menu? _instance;
         private static int _width = 75;
@@ -22,7 +22,7 @@ namespace Dynamic_Console
         /// Singleton implementation to always get the same Menu
         /// </summary>
         /// <returns></returns>
-        public static Menu GetInstance()
+        internal static Menu GetInstance()
         {
             if (_instance == null)
                 _instance = new Menu();
@@ -34,7 +34,7 @@ namespace Dynamic_Console
         /// </summary>
         /// <param name="pageName">The name of the page.</param>
         /// <param name="newPage">The new page.</param>
-        public void AddPage(string pageName, Page newPage)
+        internal void AddPage(string pageName, Page newPage)
         {
             _pages.Add(pageName, newPage);
         }
@@ -45,7 +45,7 @@ namespace Dynamic_Console
         /// </summary>
         /// <param name="pageName">The name of the page to fetch.</param>
         /// <returns></returns>
-        public Page GetPage(string pageName)
+        internal Page GetPage(string pageName)
         {
             return _pages[pageName];
         }
@@ -54,12 +54,12 @@ namespace Dynamic_Console
         /// Displays the page wanted by calling the pages Display() function.
         /// </summary>
         /// <param name="pageName">The page name to be displayed</param>
-        public void DisplayPage(string pageName)
+        internal void DisplayPage(string pageName)
         {
             _pages[pageName].Display();
         }
 
-        public static int GetWidth()
+        internal static int GetWidth()
         {
             return _width;
         }
@@ -67,9 +67,9 @@ namespace Dynamic_Console
 
     }
 
-    public static class Helper
+    internal static class Helper
     {
-        public static void PrintChar(int count, char character)
+        internal static void PrintChar(int count, char character)
         {
             for (int i = 0; i < count; i++)
             {
@@ -77,7 +77,7 @@ namespace Dynamic_Console
             }
         }
 
-        public static readonly Dictionary<String, char> borderCharacters = new Dictionary<string, char>
+        internal static readonly Dictionary<String, char> borderCharacters = new Dictionary<string, char>
         {
             { "TOP_LEFT", '╔' },
             { "TOP_RIGHT", '╗' },
@@ -91,7 +91,7 @@ namespace Dynamic_Console
             { "T_RIGHT", '╠' },
             { "CROSS", '╬' }
         };
-        public static readonly Dictionary<String, ConsoleColor> colors = new Dictionary<string, ConsoleColor>
+        internal static readonly Dictionary<String, ConsoleColor> colors = new Dictionary<string, ConsoleColor>
         {
             { "DEFAULT", ConsoleColor.White },
             { "HIGHLIGHT", ConsoleColor.Yellow },

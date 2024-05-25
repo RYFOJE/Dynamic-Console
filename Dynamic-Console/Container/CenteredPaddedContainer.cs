@@ -6,12 +6,12 @@ using System.Threading.Tasks;
 
 namespace Dynamic_Console
 {
-    public class CenteredPaddedContainer : SingleContainer
+    internal class CenteredPaddedContainer : SingleContainer
     {
 
-        public CenteredPaddedContainer(Content content) : base(content) { }
+        internal CenteredPaddedContainer(Content content) : base(content) { }
 
-        public override void Display()
+        internal override void Display()
         {
             int totalPadding = _width - _content.GetWidth();
             int leftPadding = totalPadding / 2;

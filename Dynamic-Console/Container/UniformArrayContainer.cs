@@ -2,10 +2,10 @@
 
 namespace Dynamic_Console
 {
-    public class UniformArrayContainer : MultiContainer
+    internal class UniformArrayContainer : MultiContainer
     {
 
-        public override void AddContainer(Container container)
+        internal override void AddContainer(Container container)
         {
             _containers.Add(container);
         }
@@ -21,7 +21,7 @@ namespace Dynamic_Console
 
         }
 
-        public override void Display()
+        internal override void Display()
         {
             UpdateSizing();
 

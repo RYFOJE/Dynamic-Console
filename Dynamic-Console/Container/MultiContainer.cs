@@ -6,15 +6,15 @@ using System.Threading.Tasks;
 
 namespace Dynamic_Console
 {
-    public abstract class MultiContainer : Container
+    internal abstract class MultiContainer : Container
     {
 
         protected List<Container> _containers = new List<Container>();
 
-        public abstract void AddContainer(Container container);
+        internal abstract void AddContainer(Container container);
         protected abstract void UpdateSizing();
 
-        public abstract override void Display();
+        internal abstract override void Display();
 
         protected int GetActualWidth()
         {

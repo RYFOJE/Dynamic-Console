@@ -8,18 +8,18 @@ using System.Threading.Tasks;
 
 namespace Dynamic_Console
 {
-    public class Page
+    internal class Page
     {
 
-        public Section[] _sections;
+        internal Section[] _sections;
 
-        public Page()
+        internal Page()
         {
             _sections = new Section[1];
             _sections[0] = new Section();
         }
 
-        public Page(int sectionCount)
+        internal Page(int sectionCount)
         {
             if (sectionCount < 1) { throw new ArgumentOutOfRangeException("A page must have 1 section or more"); }
 
@@ -31,12 +31,12 @@ namespace Dynamic_Console
             }
         }
 
-        public Section GetSection(int sectionNum)
+        internal Section GetSection(int sectionNum)
         {
             return _sections[sectionNum];
         }
 
-        public void Display()
+        internal void Display()
         {
 
             Console.Write(Helper.borderCharacters["TOP_LEFT"]);

@@ -7,14 +7,14 @@ using System.Threading.Tasks;
 
 namespace Dynamic_Console
 {
-    public class Content
+    internal class Content
     {
 
         private int _width = 0;
 
-        public virtual void Display() { }
+        internal virtual void Display() { }
 
-        public virtual int GetWidth()
+        internal virtual int GetWidth()
         {
             return _width;
         }
