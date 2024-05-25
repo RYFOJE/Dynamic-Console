@@ -14,7 +14,7 @@ namespace Dynamic_Console.Menu
         /// <summary>
         /// Stores all the pages that can be displayed.
         /// </summary>
-        private Dictionary<String, Page> _pages = [];
+        private Dictionary<string, Page> _pages = [];
 
         private Menu() {}
 
@@ -34,7 +34,7 @@ namespace Dynamic_Console.Menu
         /// </summary>
         /// <param name="pageName">The name of the page.</param>
         /// <param name="newPage">The new page.</param>
-        public void AddPage(String pageName, Page newPage)
+        public void AddPage(string pageName, Page newPage)
         {
             _pages.Add(pageName, newPage);
         }
@@ -45,7 +45,7 @@ namespace Dynamic_Console.Menu
         /// </summary>
         /// <param name="pageName">The name of the page to fetch.</param>
         /// <returns></returns>
-        public Page GetPage(String pageName)
+        public Page GetPage(string pageName)
         {
             return _pages[pageName];
         }
@@ -54,7 +54,7 @@ namespace Dynamic_Console.Menu
         /// Displays the page wanted by calling the pages Display() function.
         /// </summary>
         /// <param name="pageName">The page name to be displayed</param>
-        public void DisplayPage(String pageName)
+        public void DisplayPage(string pageName)
         {
             _pages[pageName].Display();
         }
