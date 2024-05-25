@@ -4,7 +4,15 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            Menu menu = Menu.GetInstance();
+            Page page1 = new Page();
+
+            menu.AddPage("page1", page1);
+
+            page1.GetSection(0).EnableDivider();
+
+            menu.DisplayPage("page1");
+
         }
     }
 }

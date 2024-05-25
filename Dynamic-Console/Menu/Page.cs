@@ -6,7 +6,7 @@ using System.Numerics;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Dynamic_Console.Menu
+namespace Dynamic_Console
 {
     public class Page
     {
@@ -31,12 +31,27 @@ namespace Dynamic_Console.Menu
             }
         }
 
+        public Section GetSection(int sectionNum)
+        {
+            return _sections[sectionNum];
+        }
+
         public void Display()
         {
+
+            Console.Write(Helper.borderCharacters["TOP_LEFT"]);
+            Helper.PrintChar(Menu.width, Helper.borderCharacters["ACROSS"]);
+            Console.WriteLine(Helper.borderCharacters["TOP_RIGHT"]);
+
             foreach (var item in _sections)
             {
                 item.Display();
             }
+
+            Console.Write(Helper.borderCharacters["BOTTOM_LEFT"]);
+            Helper.PrintChar(Menu.width, Helper.borderCharacters["ACROSS"]);
+            Console.WriteLine(Helper.borderCharacters["BOTTOM_RIGHT"]);
+
         }
 
     }
