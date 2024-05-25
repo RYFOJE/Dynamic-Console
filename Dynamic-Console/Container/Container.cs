@@ -7,14 +7,17 @@ using System.Threading.Tasks;
 
 namespace Dynamic_Console
 {
+    /// <summary>
+    /// Parent class that acts as empty 
+    /// </summary>
     public class Container
     {
 
         protected int _width;
         
-        public Container()
+        public Container(int width)
         {
-            _width = Menu.GetWidth();
+            _width = width;
         }
 
         public void SetWidth(int width)
