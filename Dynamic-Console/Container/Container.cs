@@ -13,12 +13,7 @@ namespace Dynamic_Console
     public class Container
     {
 
-        protected int _width;
-        
-        public Container(int width)
-        {
-            _width = width;
-        }
+        protected int _width = 0;
 
         public void SetWidth(int width)
         {
@@ -30,7 +25,7 @@ namespace Dynamic_Console
             return _width;
         }
 
-        public void Display() 
+        public virtual void Display() 
         {
             Helper.PrintChar(_width, ' ');
         }
