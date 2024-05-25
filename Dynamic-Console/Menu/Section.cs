@@ -39,7 +39,7 @@ namespace Dynamic_Console
             if (_isBottomDivider)
             {
                 Console.Write(Helper.borderCharacters["T_RIGHT"]);
-                Helper.PrintChar(Menu.width, Helper.borderCharacters["ACROSS"]);
+                Helper.PrintChar(Menu.GetWidth(), Helper.borderCharacters["ACROSS"]);
                 Console.WriteLine(Helper.borderCharacters["T_LEFT"]);
             }
                 

@@ -9,7 +9,7 @@ namespace Dynamic_Console
     public class Menu
     {
         private static Menu? _instance;
-        public static int width = 75;
+        private static int _width = 75;
 
         /// <summary>
         /// Stores all the pages that can be displayed.
@@ -57,6 +57,11 @@ namespace Dynamic_Console
         public void DisplayPage(string pageName)
         {
             _pages[pageName].Display();
+        }
+
+        public static int GetWidth()
+        {
+            return _width;
         }
 
 
