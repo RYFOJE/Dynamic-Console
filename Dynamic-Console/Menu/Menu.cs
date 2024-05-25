@@ -61,4 +61,35 @@ namespace Dynamic_Console.Menu
 
 
     }
+
+    public static class Helper
+    {
+        public static void PrintChar(int count, char character)
+        {
+            Console.Write(character);
+        }
+
+        public static readonly Dictionary<String, char> borderCharacters = new Dictionary<string, char>
+        {
+            { "TOP_LEFT", '╔' },
+            { "TOP_RIGHT", '╗' },
+            { "BOTTOM_LEFT", '╚' },
+            { "BOTTOM_RIGHT", '╝' },
+            { "ACROSS", '═' },
+            { "VERTICAL", '║' },
+            { "T_DOWN", '╦' },
+            { "T_UP", '╩' },
+            { "T_LEFT", '╣' },
+            { "T_RIGHT", '╠' },
+            { "CROSS", '╬' }
+        };
+        public static readonly Dictionary<String, ConsoleColor> colors = new Dictionary<string, ConsoleColor>
+        {
+            { "DEFAULT", ConsoleColor.White },
+            { "HIGHLIGHT", ConsoleColor.Yellow },
+            { "ERROR", ConsoleColor.Red },
+            { "SUCCESS", ConsoleColor.Green }
+        };
+    }
+
 }
