@@ -9,11 +9,19 @@ namespace Dynamic_Console
 {
     public class Line
     {
-        public Line() { }
+
+        private Container _container;
+
+        public Line() 
+        {
+            _container = new Container(Menu.GetWidth());
+        }
 
         public void Display()
         {
-            
+            Console.Write(Helper.borderCharacters["VERTICAL"]);
+            _container.Display();
+            Console.WriteLine(Helper.borderCharacters["VERTICAL"]);
         }
 
     }
