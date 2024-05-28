@@ -5,7 +5,7 @@ namespace Dynamic_Console
     internal class UniformArrayContainer : MultiContainer
     {
 
-        internal override void AddContainer(Container container)
+        internal void AddContainer(Container container)
         {
             _containers.Add(container);
         }

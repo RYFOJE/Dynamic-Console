@@ -9,7 +9,7 @@ namespace Dynamic_Console
     internal class Menu
     {
         private static Menu? _instance;
-        private static int _width = 75;
+        private static int _width = 100;
 
         /// <summary>
         /// Stores all the pages that can be displayed.

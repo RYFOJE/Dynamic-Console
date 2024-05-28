@@ -10,8 +10,7 @@ namespace Dynamic_Console
     {
 
         protected List<Container> _containers = new List<Container>();
-
-        internal abstract void AddContainer(Container container);
+        
         protected abstract void UpdateSizing();
 
         internal abstract override void Display();
