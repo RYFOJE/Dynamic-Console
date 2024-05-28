@@ -1,8 +1,13 @@
-﻿namespace Dynamic_Console
+﻿using System.Text.Json.Serialization;
+
+namespace Dynamic_Console
 {
+    
     internal class Text : Content
     {
 
+        [JsonInclude]
+        [JsonPropertyName("textValue")]
         private String _text = "";
 
         internal Text(string text)

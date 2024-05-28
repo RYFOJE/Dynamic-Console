@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Numerics;
 using System.Text;
+using System.Text.Json.Serialization;
 using System.Threading.Tasks;
 
 namespace Dynamic_Console
@@ -10,7 +11,12 @@ namespace Dynamic_Console
     internal class Section
     {
 
+        [JsonInclude]
+        [JsonPropertyName("isBottomDivider")]
         private bool _isBottomDivider = false;
+
+        [JsonInclude]
+        [JsonPropertyName("lines")]
         private List<Line> _lines = [];
 
         internal Section() { }
