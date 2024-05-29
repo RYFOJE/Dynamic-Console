@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
+using System.Text.Json.Serialization;
 using System.Threading.Tasks;
 
 namespace Dynamic_Console
@@ -31,7 +32,9 @@ namespace Dynamic_Console
         internal void Display()
         {
             Console.Write(Helper.borderCharacters["VERTICAL"]);
+            Helper.PrintChar(Menu.GetPadding(), ' ');
             _container.Display();
+            Helper.PrintChar(Menu.GetPadding(), ' ');
             Console.WriteLine(Helper.borderCharacters["VERTICAL"]);
         }
 

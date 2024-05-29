@@ -1,5 +1,8 @@
-﻿namespace Dynamic_Console
+﻿using System.Text.Json.Serialization;
+
+namespace Dynamic_Console
 {
+    
     internal class Text : Content
     {
 

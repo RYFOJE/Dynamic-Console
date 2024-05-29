@@ -1,7 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Reflection.Metadata;
 using System.Text;
+using System.Text.Json.Serialization;
 using System.Threading.Tasks;
 
 namespace Dynamic_Console
@@ -9,6 +11,8 @@ namespace Dynamic_Console
     internal abstract class SingleContainer : Container
     {
 
+        [JsonInclude]
+        [JsonPropertyName("containerContent")]
         protected Content _content = new Content();
 
         internal SingleContainer(Content content)

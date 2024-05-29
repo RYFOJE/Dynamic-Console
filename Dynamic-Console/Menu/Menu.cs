@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Text.Json.Serialization;
 using System.Threading.Tasks;
 
 namespace Dynamic_Console
@@ -9,11 +10,16 @@ namespace Dynamic_Console
     internal class Menu
     {
         private static Menu? _instance;
+
         private static int _width = 100;
+        private static int _padding = 1;
 
         /// <summary>
         /// Stores all the pages that can be displayed.
         /// </summary>
+        /// 
+        [JsonInclude]
+        [JsonPropertyName("pages")]
         private Dictionary<string, Page> _pages = [];
 
         private Menu() {}
@@ -62,6 +68,11 @@ namespace Dynamic_Console
         internal static int GetWidth()
         {
             return _width;
+        }
+
+        internal static int GetPadding()
+        {
+            return _padding;
         }
 
 

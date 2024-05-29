@@ -4,6 +4,7 @@ using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Numerics;
 using System.Text;
+using System.Text.Json.Serialization;
 using System.Threading.Tasks;
 
 namespace Dynamic_Console
@@ -40,8 +41,9 @@ namespace Dynamic_Console
         {
 
             Console.Write(Helper.borderCharacters["TOP_LEFT"]);
-            Helper.PrintChar(Menu.GetWidth(), Helper.borderCharacters["ACROSS"]);
+            Helper.PrintChar(Menu.GetWidth() + Menu.GetPadding() * 2, Helper.borderCharacters["ACROSS"]);
             Console.WriteLine(Helper.borderCharacters["TOP_RIGHT"]);
+
 
             foreach (var item in _sections)
             {
@@ -49,7 +51,7 @@ namespace Dynamic_Console
             }
 
             Console.Write(Helper.borderCharacters["BOTTOM_LEFT"]);
-            Helper.PrintChar(Menu.GetWidth(), Helper.borderCharacters["ACROSS"]);
+            Helper.PrintChar(Menu.GetWidth() + Menu.GetPadding() * 2, Helper.borderCharacters["ACROSS"]);
             Console.WriteLine(Helper.borderCharacters["BOTTOM_RIGHT"]);
 
         }
