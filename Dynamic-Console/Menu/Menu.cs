@@ -14,6 +14,7 @@ namespace Dynamic_Console
         [JsonInclude]
         [JsonPropertyName("width")]
         private static int _width = 100;
+        private static int _padding = 1;
 
         /// <summary>
         /// Stores all the pages that can be displayed.
@@ -69,6 +70,11 @@ namespace Dynamic_Console
         internal static int GetWidth()
         {
             return _width;
+        }
+
+        internal static int GetPadding()
+        {
+            return _padding;
         }
 
 

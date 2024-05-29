@@ -34,7 +34,9 @@ namespace Dynamic_Console
         internal void Display()
         {
             Console.Write(Helper.borderCharacters["VERTICAL"]);
+            Helper.PrintChar(Menu.GetPadding(), ' ');
             _container.Display();
+            Helper.PrintChar(Menu.GetPadding(), ' ');
             Console.WriteLine(Helper.borderCharacters["VERTICAL"]);
         }
 
