@@ -29,7 +29,7 @@ namespace Dynamic_Console.Builder
             return this;
         }
 
-        public PageBuilder AddLine(int sectionIndex, Line line)
+        public PageBuilder AddLine(Line line, int sectionIndex)
         {
             _page.GetSection(sectionIndex).AddLine(line);
             return this;
