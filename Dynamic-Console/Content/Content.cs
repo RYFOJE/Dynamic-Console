@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace Dynamic_Console
 {
-    internal class Content
+    public class Content
     {
 
         [JsonInclude]

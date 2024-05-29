@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Dynamic_Console
 {
-    internal class RightPaddedContainer : SingleContainer
+    public class RightPaddedContainer : SingleContainer
     {
 
         internal RightPaddedContainer(Content content) : base(content) { }

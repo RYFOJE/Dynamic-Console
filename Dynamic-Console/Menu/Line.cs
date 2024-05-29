@@ -8,22 +8,22 @@ using System.Threading.Tasks;
 
 namespace Dynamic_Console
 {
-    internal class Line
+    public class Line
     {
 
         private Container _container;
 
-        internal Line() 
+        public Line() 
         {
             SetContainer(new Container());
         }
 
-        internal Line(Container container)
+        public Line(Container container)
         {
             SetContainer(container);
         }
 
-        internal void SetContainer(Container newContainer)
+        public void SetContainer(Container newContainer)
         {
             _container = newContainer;
             newContainer.SetWidth(Menu.GetWidth());

@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Dynamic_Console
 {
-    internal class RatioArrayContainer : MultiContainer
+    public class RatioArrayContainer : MultiContainer
     {
 
         private List<float> _ratios = new List<float>();

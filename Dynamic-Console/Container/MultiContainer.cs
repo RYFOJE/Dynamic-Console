@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 namespace Dynamic_Console
 {
 
-    internal abstract class MultiContainer : Container
+    public abstract class MultiContainer : Container
     {
 
         [JsonInclude]

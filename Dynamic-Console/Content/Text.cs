@@ -3,7 +3,7 @@
 namespace Dynamic_Console
 {
     
-    internal class Text : Content
+    public class Text : Content
     {
 
         private String _text = "";

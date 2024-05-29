@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace Dynamic_Console
 {
-    internal class Page
+    public class Page
     {
 
         internal Section[] _sections;
@@ -32,9 +32,9 @@ namespace Dynamic_Console
             }
         }
 
-        internal Section GetSection(int sectionNum)
+        internal ref Section GetSection(int sectionNum)
         {
-            return _sections[sectionNum];
+            return ref _sections[sectionNum];
         }
 
         internal void Display()

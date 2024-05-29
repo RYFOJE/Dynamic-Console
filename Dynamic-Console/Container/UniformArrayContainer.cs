@@ -2,7 +2,7 @@
 
 namespace Dynamic_Console
 {
-    internal class UniformArrayContainer : MultiContainer
+    public class UniformArrayContainer : MultiContainer
     {
 
         internal void AddContainer(Container container)

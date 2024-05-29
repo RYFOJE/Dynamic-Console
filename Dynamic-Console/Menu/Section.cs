@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace Dynamic_Console
 {
-    internal class Section
+    public class Section
     {
 
         private bool _isBottomDivider = false;
@@ -17,19 +17,19 @@ namespace Dynamic_Console
         [JsonPropertyName("lines")]
         private List<Line> _lines = [];
 
-        internal Section() { }
+        public Section() { }
 
-        internal void AddLine(Line newLine)
+        public void AddLine(Line newLine)
         {
             _lines.Add(newLine);
         }
 
-        internal void EnableDivider() 
+        public void EnableDivider() 
         {
             _isBottomDivider = true;
         }
 
-        internal void DisableDivider()
+        public void DisableDivider()
         {
             _isBottomDivider = false;
         }

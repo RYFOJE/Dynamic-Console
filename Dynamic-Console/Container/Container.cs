@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 namespace Dynamic_Console
 {
 
-    internal class Container
+    public class Container
     {
 
         protected int _width = 0;

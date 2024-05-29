@@ -6,10 +6,10 @@ using System.Threading.Tasks;
 
 namespace Dynamic_Console
 {
-    internal class LeftPaddedContainer : SingleContainer
+    public class LeftPaddedContainer : SingleContainer
     {
 
-        internal LeftPaddedContainer(Content content) : base(content) { }
+        public LeftPaddedContainer(Content content) : base(content) { }
 
         internal override void Display()
         {
