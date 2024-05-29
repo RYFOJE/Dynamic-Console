@@ -11,8 +11,6 @@ namespace Dynamic_Console
     internal class Section
     {
 
-        [JsonInclude]
-        [JsonPropertyName("isBottomDivider")]
         private bool _isBottomDivider = false;
 
         [JsonInclude]

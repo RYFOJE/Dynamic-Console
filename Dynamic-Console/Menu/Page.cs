@@ -11,8 +11,7 @@ namespace Dynamic_Console
 {
     internal class Page
     {
-        [JsonInclude]
-        [JsonPropertyName("sections")]
+
         internal Section[] _sections;
 
         internal Page()

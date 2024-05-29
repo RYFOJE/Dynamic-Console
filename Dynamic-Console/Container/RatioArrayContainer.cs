@@ -9,8 +9,7 @@ namespace Dynamic_Console
 {
     internal class RatioArrayContainer : MultiContainer
     {
-        [JsonInclude]
-        [JsonPropertyName("ratios")]
+
         private List<float> _ratios = new List<float>();
 
         protected override void UpdateSizing()

@@ -8,8 +8,6 @@ using System.Threading.Tasks;
 namespace Dynamic_Console
 {
 
-    [JsonDerivedType(typeof(RatioArrayContainer), typeDiscriminator: "RatioArrayContainer")]
-    [JsonDerivedType(typeof(UniformArrayContainer), typeDiscriminator: "UniformArrayContainer")]
     internal abstract class MultiContainer : Container
     {
 

@@ -11,8 +11,6 @@ namespace Dynamic_Console
     {
         private static Menu? _instance;
 
-        [JsonInclude]
-        [JsonPropertyName("width")]
         private static int _width = 100;
         private static int _padding = 1;
 

@@ -8,7 +8,6 @@ using System.Threading.Tasks;
 
 namespace Dynamic_Console
 {
-    [JsonDerivedType(typeof(Text), typeDiscriminator: "withText")]
     internal class Content
     {
 

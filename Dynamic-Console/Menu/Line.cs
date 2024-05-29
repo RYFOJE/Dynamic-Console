@@ -11,8 +11,6 @@ namespace Dynamic_Console
     internal class Line
     {
 
-        [JsonInclude]
-        [JsonPropertyName("container")]
         private Container _container;
 
         internal Line() 

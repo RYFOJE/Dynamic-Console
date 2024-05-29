@@ -8,9 +8,6 @@ using System.Threading.Tasks;
 
 namespace Dynamic_Console
 {
-    [JsonDerivedType(typeof(LeftPaddedContainer), typeDiscriminator: "LeftPaddedContainer")]
-    [JsonDerivedType(typeof(CenteredPaddedContainer), typeDiscriminator: "CenteredPaddedContainer")]
-    [JsonDerivedType(typeof(RightPaddedContainer), typeDiscriminator: "RightPaddedContainer")]
     internal abstract class SingleContainer : Container
     {
 
